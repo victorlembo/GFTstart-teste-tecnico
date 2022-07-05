@@ -33,7 +33,7 @@ public class Aplic {
             a[i].setNtPrv1(Math.random() * 10);
             a[i].setNtPrv2(Math.random() * 10);
             a[i].setNtPrv3(Math.random() * 10);
-            a[i].setFrequencia(Math.random() * 100);
+            a[i].setFrequencia(Math.random() * 10);
 
             if (a[i].calcMediaFinal() < 7) {
                 reprovados++;
@@ -41,10 +41,14 @@ public class Aplic {
                 reprovadosFrequencia++;
             }
         }
-        
-        System.out.println(a[1].calcMediaFinal());
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("Matricula: " + a[i].getMatricula());
+            System.out.println("Nota Final: " + a[i].calcMediaFinal());
+
+        }
+
         System.out.println("Alunos reprovados: " + reprovados);
-        System.out.println("Alunos reprovados por frequencia: " + df.format((reprovadosFrequencia / 5) * 100) + " %" );
+        System.out.println("Alunos reprovados por frequencia: " + df.format((reprovadosFrequencia / 5) * 100) + " %");
 
     }
 
