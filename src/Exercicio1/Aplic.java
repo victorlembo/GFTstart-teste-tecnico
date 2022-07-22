@@ -107,7 +107,7 @@ public class Aplic {
 
             }
 
-        } while (opcao != 0);
+        } while (opcao != 3);
 
     }
 

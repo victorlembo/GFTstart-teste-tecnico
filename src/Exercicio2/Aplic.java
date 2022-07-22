@@ -33,17 +33,23 @@ public class Aplic {
             a[i].setNtPrv1(Math.random() * 10);
             a[i].setNtPrv2(Math.random() * 10);
             a[i].setNtPrv3(Math.random() * 10);
-            a[i].setFrequencia(Math.random() * 10);
+            a[i].setFrequencia(Math.random() * 100);
 
             if (a[i].calcMediaFinal() < 7) {
                 reprovados++;
+                a[i].setStatus("Reprovado por nota");
             } else if (a[i].getFrequencia() < 75) {
                 reprovadosFrequencia++;
+                a[i].setStatus("Reprovado por Frequencia");
+            } else {
+                a[i].setStatus("Aprovado");
             }
         }
         for (int i = 0; i < a.length; i++) {
             System.out.println("Matricula: " + a[i].getMatricula());
-            System.out.println("Nota Final: " + a[i].calcMediaFinal());
+            System.out.println("Nota Final: " + df.format(a[i].calcMediaFinal()));
+            System.out.println("Situacao: " + a[i].getStatus());
+            System.out.println("\n");
 
         }
 

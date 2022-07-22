@@ -13,6 +13,7 @@ public class Aluno {
 
     private int matricula;
     private double NtPrv1, NtPrv2, NtPrv3, frequencia;
+    private String status;
 
     public int getMatricula() {
         return matricula;
@@ -56,6 +57,14 @@ public class Aluno {
 
     public double calcMediaFinal() {
         return ((NtPrv1 + NtPrv2 + NtPrv3) / 3);
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
 }

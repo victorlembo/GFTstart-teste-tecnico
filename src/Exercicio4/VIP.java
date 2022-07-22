@@ -13,7 +13,10 @@ public class VIP extends Ingresso {
 
     private double valorAdicional;
 
-
+    public VIP(double valorAdicional, double valor) {
+        super(valor);
+        this.valorAdicional = valorAdicional;
+    }
 
     public double valorIngressoVIP(double v) {
         return v + valorAdicional;

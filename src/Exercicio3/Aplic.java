@@ -43,7 +43,7 @@ public class Aplic {
             System.out.println("5 - Voto nulo");
             System.out.println("6 - Voto em branco");
             System.out.println("0 - Sair");
-            System.out.println("Digite sua opcao de voto: ");
+            System.out.println("\nDigite sua opcao de voto: ");
             opcao = sc.nextInt();
 
             switch (opcao) {

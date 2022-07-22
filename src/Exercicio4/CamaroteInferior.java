@@ -9,9 +9,14 @@ package Exercicio4;
  *
  * @author VictorHugo
  */
-public class CamaroteInferior {
+public class CamaroteInferior extends VIP {
 
     private String localizacao;
+
+    public CamaroteInferior(String localizacao, double valorAdicional, double valor) {
+        super(valorAdicional, valor);
+        this.localizacao = localizacao;
+    }
 
     public String getLocalizacao() {
         return localizacao;

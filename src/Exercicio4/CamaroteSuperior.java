@@ -9,13 +9,17 @@ package Exercicio4;
  *
  * @author VictorHugo
  */
-public class CamaroteSuperior {
-    
-    private double valorAdicional;
-    
-    public double valCamSuperior(double v){
-        return v + valorAdicional;
+public class CamaroteSuperior extends VIP {
+
+    private double valorAdicional2;
+
+    public CamaroteSuperior(double valorAdicional2, double valorAdicional, double valor) {
+        super(valorAdicional, valor);
+        this.valorAdicional2 = valorAdicional2;
     }
-    
-    
+
+    public double valCamSuperior(double v) {
+        return super.valorIngressoVIP(v)+ valorAdicional2;
+    }
+
 }

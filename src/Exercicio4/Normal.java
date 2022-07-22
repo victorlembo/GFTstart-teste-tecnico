@@ -10,9 +10,13 @@ package Exercicio4;
  * @author vitin
  */
 public class Normal extends Ingresso {
-    
-    public void IngressoNormal(){
+
+    public Normal(double valor) {
+        super(valor);
+    }
+
+    public void IngressoNormal() {
         System.out.println("Ingresso Normal");
     }
-    
+
 }
